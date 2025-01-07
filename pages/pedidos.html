@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dulces Momentos</title>
+
+</head>
+
+<body id="body">
+    <header id="header">
+        <img class="headerLogo" src="../icons/headerLogo.png" alt="Imagen Dulces Momentos">
+        <h1>Dulces Momentos</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="#">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+            <label for="producto">Selecciona un producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="">Elige un producto</option>
+                <option value="torta">Torta</option>
+                <option value="tarta">Tarta</option>
+                <option value="cupcake">Combos</option>
+                <option value="combos">Postres</option>
+            </select>
+
+            <label for="cantidad">Cantidad</label>
+            <select id="cantidad" name="cantidad" required>
+                <option value="">Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+    </main>
+
+    <footer id="footer">
+
+        <section>
+            <article class="footerArt">
+                <h3>Sabores que crean recuerdos</h3>
+            </article>
+        </section>
+        
+        <section class="footerRedes">
+            <a href="https://www.instagram.com/dulcesmomentos.cba/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;" class="redes"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;" class="redes"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;" class="redes"></i></i></a>
+        </section>
+
+        <section>
+            <article class="footerCopy">
+                <h2>Copyright 2024</h2>
+                <h2>Creado por - Matías Picón</h2>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

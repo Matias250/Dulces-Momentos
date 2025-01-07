@@ -1,0 +1,157 @@
+/*
+ESTO ARTICULA PARA PROPIEDADES COMO MARGIN-PADDING
+
+            |TOP-RIGHT-BOTTOM-LEFT|
+    margin: 10px 15px 20px 25px;
+
+            |T-R-B-L|
+    margin: 20px;
+
+            |T-B / L-R|
+    margin: 20px 10px;
+
+            |T-L-R  - B|
+    margin: 10px 10px 20px
+
+    -----------------------------------
+
+    margin-top:;
+    margin-bottom:;
+    margin-left:;
+    margin-right:;
+    */
+
+
+/*ESTILOS RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+/*ESTILOS BODY*/
+
+#body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/*ESTILOS HEADER*/
+
+#header{
+    background-color: rgb(255, 203, 219);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    position: fixed;
+    white-space: nowrap;
+}
+
+.tituloLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 200px;
+
+}
+
+.headerLogo {
+    max-width: 50px;
+    height: 50px;
+}
+
+.headerTitulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#nav {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2%;
+    display: inline-block;
+}
+
+#nav a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 30px;
+    color: black;
+    padding: 5px 10px;
+
+}
+/*ESTILOS MAIN= INDEX*/
+
+#main{
+    flex-grow: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 145px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    align-items: flex-start;
+    text-align: center;
+    display: flex;
+}
+
+#imagenes1{
+    max-width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.catalagoimg{
+    max-width: 200px;
+    height: 200px;
+}
+
+#imagenes2{
+    justify-content: space-between;
+    display: flex;
+}
+
+.eventosimg{
+    max-width: 200px;
+    height: 200px;
+}
+
+#imagenes3{
+    justify-content: space-between;
+    display: flex;
+}
+
+/*ESTILOS FOOTER*/
+
+#footer{
+    background-color: rgb(255, 203, 219);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerCopy{
+    text-align: right;
+}
