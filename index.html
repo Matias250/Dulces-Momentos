@@ -5,61 +5,87 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Dulces Momentos</title>
 
 </head>
 
-<body id="body">
+<body>
     <header id="header">
         <div class="tituloLogo">
             <img class="headerLogo" src="icons/headerLogo.png" alt="Imagen Dulces Momentos">
-            <h1 class="headerTitulo">Dulces Momentos</h1>
+            <h1>Dulces Momentos</h1>
         </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/catalogo.html">Catalogo</a></li>
-                <li><a href="pages/eventos.html">Eventos</a></li>
-                <li><a href="pages/pedidos.html">Pedidos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="pages/nosotros.html" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="pages/catalogo.html" aria-current="page">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="pages/eventos.html" aria-current="page">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="pages/pedidos.html" aria-current="page">Pedidos</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
     </header>
 
     <main id="main">
-        <h2 class="titulo">Especialidades de la casa</h2>
-        <div>
-            <img src="images/chocolatosa.png" alt="Torta chocolatosa" id="imagenes1"class="chocolatosa">
-            <p></p>
-        </div>
-        <div>
-            <img src="images/marquise.png" alt="Marquise" id="imagenes1" class="marquise">
-            <p></p>
+        <div class="contenedor">
+            <h2 class="subtitulo">Especialidades de la casa</h2>
+            <div class="imagenes">
+                <div class="items">
+                    <img src="images/chocolatosa.png" alt="Torta de Chocolate" class="chocolatosa">
+                    <p class="descripcion"> Deliciosa torta cubierta con ganache de chocolate semi-amargo, decorada con una irresistible combinación de chocolates, galletas Oreo, trufas y barquillos. Cada bocado es una explosión de sabor para los verdaderos amantes del chocolate. Ideal para celebrar momentos especiales con un toque dulce y elegante. </p>
+                </div>
+                <div class="items">
+                    <p class="descripcion">La Marquise es una deliciosa y elegante torta de origen francés, conocida por su suave y esponjosa textura. En Dulces Momentos, preparamos nuestra Marquise con una combinación perfecta de chocolate de alta calidad y un toque de crema suave, creando una experiencia de sabor que se derrite en tu boca. Ideal para cualquier celebración, su sabor intenso y su presentación refinada la convierten en una opción infaltable en nuestros eventos especiales. Perfecta para los amantes del buen chocolate y la repostería fina, cada bocado de nuestra Marquise es una verdadera obra de arte.</p>
+                    <img src="images/marquise.png" alt="Marquise" class="chocolatosa">
+                </div>
+            </div>
         </div>
     </main>
     
-    <footer id="footer">
+    <footer>
 
         <section>
             <article class="footerArt">
-                <h3>Sabores que crean recuerdos</h3>
+                <h3 class="frase">Sabores que crean recuerdos</h3>
             </article>
         </section>
         
         <section class="footerRedes">
-            <a href="https://www.instagram.com/dulcesmomentos.cba/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></i></a>
+            <a href="https://www.instagram.com/dulcesmomentos.cba/" class="redes" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+            <a href="" class="redes" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
+            <a href="" class="redes" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></i></a>
         </section>
 
         <section>
             <article class="footerCopy">
-                <h2>Copyright 2024</h2>
-                <h2>Creado por - Matías Picón</h2>
+                <h2 class="footerCopy1">Copyright 2024</h2>
+                <h2 class="footerCopy1">Creado por - Matías Picón</h2>
             </article>
         </section>
     </footer>
+
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script>
+
 </body>
+
 </html>
