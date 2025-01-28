@@ -1,0 +1,65 @@
+/*ESTILOS  NOSOTROS*/
+
+#main1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid $border-color !important;
+    border-radius: 10px; 
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.quien{
+    text-align: center;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+address p{
+    display: flex;
+    flex-direction: column;
+}
+
+.mail{
+    color: $color-primario;
+}
+
+.contacto1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.reparto{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 25px;
+    justify-content: space-between;
+
+}
+
+.mapa {
+    height: 400px;
+    width: 400px;
+}
+
+
+

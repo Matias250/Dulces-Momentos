@@ -1,0 +1,37 @@
+/*ESTILOS  CATALOGO-EVENTOS*/
+
+.seccion{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h3{    
+    display: inline-flex;
+    border: solid $color-primario 1px;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+
+#imagenes2{
+    justify-content: space-around;
+    display: flex;
+    gap: 15px;
+}
+
+#imagenes3{
+    @extend #imagenes2;
+}
+
+.eventosimg, .catalogoimg{
+    max-width: 200px;
+    height: 200px;
+}
+/* .imagenes2 a:hover {
+    background-color: rgb(250, 159, 186);
+    box-shadow: 2px 2px 10px black;
+} */

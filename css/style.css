@@ -1,470 +1,542 @@
-/*
-ESTO ARTICULA PARA PROPIEDADES COMO MARGIN-PADDING
-
-            |TOP-RIGHT-BOTTOM-LEFT|
-    margin: 10px 15px 20px 25px;
-
-            |T-R-B-L|
-    margin: 20px;
-
-            |T-B / L-R|
-    margin: 20px 10px;
-
-            |T-L-R  - B|
-    margin: 10px 10px 20px
-
-    -----------------------------------
-
-    margin-top:;
-    margin-bottom:;
-    margin-left:;
-    margin-right:;
-    */
-
-
 /*ESTILOS RESET*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px red solid;  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*ESTILOS BODY*/
-
-html, body{
-    height: 100%;
-    width: 100%;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /*ESTILOS HEADER*/
-
-#header{
-    background-color: rgb(255, 203, 219);
-    height: 18%;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    white-space: nowrap;
+#header {
+  background-color: rgb(255, 203, 219);
+  height: 18%;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
 }
 
-.tituloLogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 170px;
-
+.tituloLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 170px;
 }
 
 .headerLogo {
-    margin-top: 5px;
-    max-width: 50px;
-    height: 50px;
+  margin-top: 5px;
+  max-width: 50px;
+  height: 50px;
 }
 
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    margin-top: 5px;
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  margin-top: 5px;
 }
 
-header nav{
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 40px;
+header nav {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
 }
 
-li{
-    list-style: none;
-    font-size: 25px;
+li {
+  list-style: none;
+  font-size: 25px;
 }
 
-header nav ul li{
-    display: inline;
+header nav ul li {
+  display: inline;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 10px;
-    width: 110px;
-    height: 30px;
-    border-radius: 30px;
-    color: black;
-    background-color: rgb(255, 203, 219);
+header nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+  width: 110px;
+  height: 30px;
+  border-radius: 30px;
+  color: black;
+  background-color: rgb(255, 203, 219);
 }
 
-header nav ul li a:hover{
-    background-color: rgb(253, 168, 194);
-    box-shadow: 2px 2px 10px black;
-    transition: 1s;
+/*ESTILOS FOOTER*/
+footer {
+  background-color: rgb(255, 203, 219);
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: black;
 }
 
-/*ESTILOS MAIN= INDEX*/
+.footerCopy {
+  flex: 1;
+  text-align: center;
+}
 
-/*ESTILOS  INICIO*/
+.footerCopy1 {
+  font-size: 20px;
+  color: black;
+}
 
-main{
+.footerRedes {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.footerArt {
+  flex: 1;
+  margin-left: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frase {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILOS RESPONSIVE */
+@media (max-width: 768px) {
+  .items {
+    flex-direction: row;
+    text-align: left;
+  }
+  .descripcion {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .chocolatosa, .contacto1, .quien, .reparto {
+    flex: 1;
+    max-width: 50%;
+  }
+  #main1 {
     display: flex;
-    min-width: 100%;
-    padding: 140px;
-    background-color: #fdacec;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mapa {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  #imagenes2, #imagenes3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .seccion img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  .seccion h3 {
+    text-align: center;
+  }
+  #main4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .formularioPedidos {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+  .pedidos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .condiciones {
+    margin-top: 20px;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reduce el espacio entre elementos */
+  }
+  .footerArt .frase {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .footerRedes {
+    display: flex;
+    align-items: center;
+  }
+  .footerCopy .footerCopy1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+header nav ul li a:hover {
+  background-color: rgb(253, 168, 194);
+  box-shadow: 2px 2px 10px black;
+  transition: 1s;
 }
 
-.catalagoimg{
-    max-width: 200px;
+.chocolatosa:hover, .contacto1:hover, .quien:hover, .reparto:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.h3:hover {
+  animation-name: efectoXY;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.catalogoimg:hover, .eventosimg:hover {
+  animation-name: imagenes25;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+@keyframes imagenes25 {
+  0% {
+    width: 200px;
     height: 200px;
-} 
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+.mercadopago, .efectivo {
+  animation-name: efectoXY;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes efectoXY {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/*ESTILOS  INICIO*/
+main {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  padding: 140px;
+  background-color: #fdacec;
+}
+
+.catalagoimg {
+  max-width: 200px;
+  height: 200px;
+}
 
 .contenedor {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid black;
-    padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #000 !important;
+  padding: 20px;
 }
 
 .subtitulo {
-    font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color:black solid;
-    text-decoration: underline;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: black;
+  text-decoration: underline;
 }
 
 .imagenes {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: end;
+  display: flex;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .items {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
 }
 
-.chocolatosa {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+.chocolatosa, .contacto1, .quien, .reparto {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .descripcion {
-    width: 50%;
-    text-align: justify;
-    font-size: 1rem;
-    color: black;
+  width: 50%;
+  text-align: justify;
+  font-size: 20px;
+  color: black;
 }
 
 /*ESTILOS  NOSOTROS*/
-
-#main1{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 120px;
-    width: 100%;
-    box-sizing: border-box;
+#main1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 120px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px; 
-    width: 100%;
-    box-sizing: border-box;
-    flex: 1;
-    margin-bottom: 20px;
-    justify-content: space-around;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000 !important;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  margin-bottom: 20px;
+  justify-content: space-around;
 }
 
-.quien{
-    text-align: center;
-    text-decoration: underline;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
+.quien {
+  text-align: center;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
 }
 
-address p{
-    display: flex;
-    flex-direction: column;
+address p {
+  display: flex;
+  flex-direction: column;
 }
 
-.contacto1{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px;
+.mail {
+  color: black;
 }
 
-.reparto{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 20px;
-    font-size: 25px;
-    justify-content: space-between;
+.contacto1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
 
+.reparto {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 25px;
+  justify-content: space-between;
 }
 
 .mapa {
-    height: 400px;
-    width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
 /*ESTILOS  CATALOGO-EVENTOS*/
-
-.seccion{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.seccion {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.h3{
-    display: inline-flex;
-    border: black solid 1px;
-    border-radius: 20px;
-    padding: 7px;
-    margin: 0;
-    margin-bottom: 5px;
+.h3 {
+  display: inline-flex;
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 7px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
 }
 
+#imagenes2, #imagenes3 {
+  justify-content: space-around;
+  display: flex;
+  gap: 15px;
+}
 
-#imagenes2{
-    justify-content: space-around;
-    display: flex;
-    gap: 15px;
+.eventosimg, .catalogoimg {
+  max-width: 200px;
+  height: 200px;
 }
 
 /* .imagenes2 a:hover {
     background-color: rgb(250, 159, 186);
     box-shadow: 2px 2px 10px black;
 } */
-
-#main3{
-    height: 100%;
-    justify-content: center;
-}
-
-#imagenes3{
-    justify-content: space-around;
-    display: flex;
-    gap: 15px;
-}
-
-.eventosimg, .catalogoimg{
-    max-width: 200px;
-    height: 200px;
-}
-
 /*ESTILOS  PEDIDOS*/
-
-#main4{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+#main4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.pedidos1{
-    display: flex;
+.pedidos1 {
+  display: flex;
 }
 
-h2{
-    font-size: 3rem;
-    text-align: center;
+h2 {
+  font-size: 3rem;
+  text-align: center;
 }
 
-main p{
-    width: 80%;
-    text-align: center;
-    margin: 10px auto;
-    line-height: 25px;
-    font-size: 20px;
+main p {
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 25px;
+  font-size: 20px;
 }
 
-legend{
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
+legend {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.radio{
-    display: flex;
+.radio {
+  display: flex;
 }
 
-.fechaPedido{
-    font-family: Arial, Helvetica, sans-serif;
+.fechaPedido {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.formulario{
-    display: flex;
-    justify-content: space-around;
+.formulario {
+  display: flex;
+  justify-content: space-around;
 }
 
-form{
-    width: 400px;
-}
-label, input, textarea, select{
-    display: block;
-    margin-left:30px;
-    text-align: left;
-}
-
-input, textarea, select{
-    margin-bottom: 10px;
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-textarea{
-    resize: none;
+label, input, textarea, select {
+  display: block;
+  margin-left: 30px;
+  text-align: left;
 }
 
-input[type="submit"] {
-    font-size: 16px;
-    cursor: pointer;
+input, textarea, select {
+  margin-bottom: 10px;
 }
 
-.enviar:hover{
-    box-shadow: 2px 2px 2px black;
+textarea {
+  resize: none;
 }
 
-.condiciones1{
-    display: flex;
-    flex-direction: column;
-    border: black solid 1px;
-    padding: 10px 10px 10px 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
+input[type=submit] {
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.condiciones2{
-    display: flex;
-    flex-direction: column;
-    border: black solid 1px;
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-}
-.pago{
-    text-align: center;
-    font-size: 30px;
-    text-decoration: underline;
-    margin-bottom: 20px;
+.enviar:hover {
+  box-shadow: 2px 2px 2px black;
 }
 
-.pagos{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
+.condiciones1 {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  padding: 10px 10px 10px 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
-.mercadopago, .efectivo{
-    align-items: center;
-    width: 100px;
+.condiciones2 {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  padding: 10px;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
-.terminos{
-    margin-left: 20px;
-    padding-left: 20px;
+.pago {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 20px;
 }
 
-.li{
-    margin-bottom: 10px;
-    font-size: 20px;
+.pagos {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
 }
 
-/*ESTILOS FOOTER*/
-
-footer{
-    background-color: rgb(255, 203, 219);
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    color: black;
+.mercadopago, .efectivo {
+  align-items: center;
+  width: 100px;
 }
 
-.footerCopy{
-    flex: 1;
-    text-align: center;
+.terminos {
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
-.footerCopy1{
-    font-size: 20px;
-    color: black;
+.li {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
-.footerRedes{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.redes{
-    font-size: 30px;
-    text-decoration: none;
-    color: black solid;
-}
-
-.footerArt{
-    flex: 1;
-    margin-left: 40px;
-    border: 1px black solid;
-    border-radius: 20px;
-    padding: 5px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frase{
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-/* ESTILOS RESPONSIVE */
-
-@media (max-width: 765px) {
-
-    .items{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .items img {
-        order: -1;
-    }
-
-    .descripcion{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #main1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */

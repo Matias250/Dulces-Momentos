@@ -1,0 +1,52 @@
+/*ESTILOS FOOTER*/
+
+footer{
+    background-color: $color-pagina;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: $color-primario;
+}
+
+.footerCopy{
+    flex: 1;
+    text-align: center;
+}
+
+.footerCopy1{
+    font-size: 20px;
+    color: $color-primario;
+}
+
+.footerRedes{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes{
+    font-size: 30px;
+    text-decoration: none;
+    color: $color-primario;
+}
+
+.footerArt{
+    flex: 1;
+    margin-left: 40px;
+    border: 1px solid $color-primario;
+    border-radius: 20px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frase{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,57 @@
+header nav ul li a:hover{
+    background-color: rgb(253, 168, 194);
+    box-shadow: 2px 2px 10px $color-primario;
+    transition: 1s;
+}
+
+.chocolatosa:hover {
+    transform: scale(1.1,1.1);
+}
+
+.contacto1, .quien, .reparto{
+    @extend .chocolatosa;
+}
+
+.h3:hover{
+    animation-name: efectoXY;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.catalogoimg:hover {
+    animation-name: imagenes25;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.eventosimg{
+    @extend .catalogoimg;
+}
+
+@keyframes imagenes25 {
+    0% { width: 200px; height: 200px; }
+    100% { width: 150px; height: 150px; }
+}
+
+.mercadopago{
+    animation-name: efectoXY;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.efectivo{
+    @extend .mercadopago;
+}
+
+@keyframes efectoXY{
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translateX(10px);}
+    100%{transform: translateX(0px);}
+}
